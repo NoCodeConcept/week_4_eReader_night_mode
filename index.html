@@ -27,8 +27,29 @@
 		-->
 		<div class="row">
 			<div class="col-md-12">
-				<button class="btn btn-default js-go-day">DAY NODE</button>
-				<button class="btn btn-default js-go-night">NIGHT NODE</button>
+				<button class="btn btn-default" onclick="day()">DAY NODE</button>
+
+				<script>
+				function day() {
+					$('body').removeClass('night');
+					$('div').removeClass('night');
+					$('li').removeClass('night');
+				}
+				</script>
+
+
+
+				<button class="btn btn-default" onclick="night()">NIGHT NODE</button>
+<script>
+function night() {
+				$('body').addClass('night');
+				$('div').addClass('night');
+				$('li').addClass('night');
+			}
+</script>
+
+
+
 			</div>
 		</div>
 		<div class="row">
